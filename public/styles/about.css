@@ -1,0 +1,51 @@
+#heading{
+    background-color: #50B498;
+    margin: 0px;
+    padding: 15px;
+    color:white;
+    padding-left: 30px;
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    padding-left: 75px;
+    font-size: 30px;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+#body{
+    background-color: white;
+    color: gray;
+    font-size: 20px;
+    margin-left: 50px;
+    margin-right: 40px;
+    
+}
+.about{
+    margin-top: 30px;
+    margin-bottom: 40px;
+}
+
+span.name{
+    font-family:serif;
+}
+.skills{
+     color: #77B254;
+    font-weight: 400;
+    font-size: 22px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-family: sans-serif;
+}
+
+#footer{
+    padding-top: 30px;
+}
+.type_problem{
+    height: 300px;
+}

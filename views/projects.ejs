@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Website</title> 
+
+
+
+    <link rel="stylesheet" href="/styles/style2.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/styles/projects.css">
+    <link rel="stylesheet" href="/styles/mobile_project.css">
+</head>
+<style>
+
+    .fixed-anchor-left{
+        position: relative;
+        left: 40px;
+        z-index: 2;
+    }
+
+    
+    #project {
+    background: linear-gradient(135deg, #50B498, #3a8d7a);
+    color: white;
+    border: none;
+    padding: 12px 18px;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.2);
+  }
+  #project:hover {
+  background: linear-gradient(135deg, #3a8d7a, #2c7b6c);
+  transform: scale(1.1);
+  box-shadow: 2px 6px 15px rgba(0, 0, 0, 0.3);
+  }
+
+    
+    @media screen and (max-width: 980px) {
+        .project{
+            height: 500px;
+
+        }
+        #arrow{
+        height: 80px;
+        width: 80px;
+        position: relative;
+        right: 40px;
+        margin-right: 20px;
+        }
+        
+        .max-img{
+            position: relative;
+            bottom: 70px;
+        }
+        .max-cross{
+            position: relative;
+            bottom: 80px;
+        }
+    }
+    
+
+</style>
+<body>
+    <a href="./about" class="fixed-anchor-left" id="arrow-fix">⬅️</a>
+    <a href="./exp" class="fixed-anchor" id="arrow-fix">➡️</a>
+    <%-include('partials/header')  %>
+    
+    <p class="heading" style="padding-left: 110px;">PROJECTS</p>
+   
+   
+    <div class="container body">
+        <p class="class_prj">WEB&nbsp; DEVELOPMENT </p>
+
+        <div class="boxs_prj">
+
+            <div class="project lazy-load"  style="background-image:url(/file_taracker.jpg) ;background-size: cover; background-position: center; background-repeat: no-repeat">
+                <div class="bottom">
+                    <p class="project-heading"> File Tracker Web-Application</p><span class="dot">⫶</span>
+                    <p class="pragraph"> 
+                        File Tracker System for Research and Consultancy Cell at IIEST, Shibpur,.</p>
+                </div>
+                <div class="cover">
+                    
+                    <ul>
+                        <li><span>Tools:</span> EJS, CSS, Node.js, Express.js, SQL</li>
+                        <li>Developed a web application to manage and track files for the Research and Consultancy Cell at IIEST, Shibpur.</li>
+                        <li>Enabled the dean to set file processing paths for seamless member routing.</li>
+                        <li>Allowed faculty members to hold or dismiss files with valid reasons, enhancing flexibility in file handling.</li>
+
+                        
+
+                    </ul>
+                    <div class="svg-box">
+                        <img src="/arrow-up-right-square-fill.svg" class="gitpp img img_link_dance" alt="right-arrow" id="arrow" onclick="event.stopPropagation() ; location.href='#'">
+                        <img src="/gitpppp.png" class="gitpp img img_link_dance" alt="github" id="git"  onclick="event.stopPropagation() ; location.href='https://github.com/rishabh00712/keeper'">
+                    </div>
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="gray" class="bi bi-x-lg img_link_dance" viewBox="0 0 15 15" >
+                        <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z"/>
+                    </svg>
+                </div>
+            </div>
+            <div class="project lazy-load"  style="background-image:url(/flood.jpg) ;background-size: cover; background-position: center; background-repeat: no-repeat">
+                <div class="bottom">
+                    <p class="project-heading"> Flood Simulation and Alert System</p><span class="dot">⫶</span>
+                    <p class="pragraph"> 
+                        A web application integrated with real-time data to predict the sea level of any location in World.</p>
+                </div>
+                <div class="cover">
+                    
+                    <ul>
+                        <li><span>Tools:</span> React, Node.js, Express.js, SQL, ANN Model</li>
+                        <li>Created a Flask-based REST API with a regression AI model to predict flood probability.</li>
+                        <li>Used Open-Meteo for past and upcoming weather data.</li>
+                        <li>Used the model to estimate flood risk for the next seven days and simulate on world map.</li>
+                        
+                        
+
+                    </ul>
+                    <div class="svg-box">
+                        <img src="/arrow-up-right-square-fill.svg" class="gitpp img img_link_dance" alt="right-arrow" id="arrow" onclick="event.stopPropagation() ; location.href='#'">
+                        <img src="/gitpppp.png" class="gitpp img img_link_dance" alt="github" id="git"  onclick="event.stopPropagation() ; location.href='https://github.com/rishabh00712/keeper'">
+                    </div>
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="gray" class="bi bi-x-lg img_link_dance" viewBox="0 0 15 15" >
+                        <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z"/>
+                    </svg>
+                </div>
+            </div>
+
+            <div  id="temp" class="project lazy-load" style="background-image:url(/blog.jpeg) ;background-size: cover; background-position: center; background-repeat: no-repeat">
+                <div class="bottom">
+                    <p class="project-heading"> Blog Web-Application </p><span class="dot">⫶</span>
+                    <p class="pragraph"> A simple and extensible blog web app based on a private API.</p>
+                </div>
+                <div class="cover">
+                    
+                    <ul>
+                        <li><span>Tools:</span> Ejs,CSS,Node.js,Express.js,<br />Bootstrap.</li>
+                        <li>Register/login to the web app.</li>
+                        <li>This private API base project includes options to add, edit, and delete blog posts.</li>
+                        <li>No database is included. The setup involves two servers: one for handling requests and another for processing and responding accordingly.</li>
+                        <li>Easy to use with a good user friendly UI.</li>
+                        
+
+                    </ul>
+                    <div class="svg-box">
+                        <img src="/arrow-up-right-square-fill.svg" class="img gitpp online img_link_dance" alt="right-arrow" id="arrow" onclick="event.stopPropagation() ; location.href='#'">
+                        <img src="/gitpppp.png" class="img gitpp img_link_dance" alt="github img_link_dance" id="git" onclick="event.stopPropagation() ; location.href='https://github.com/rishabh00712/Blog-Posting-app'">
+                    </div>
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="gray" class="bi bi-x-lg img_link_dance" viewBox="0 0 15 15" >
+                        <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z"/>
+                    </svg>
+                </div>
+            </div>
+    
+            <div class="project lazy-load" style="background-image:url(/map.jpeg) ;background-size: cover; background-position: center; background-repeat: no-repeat">
+                <div class="bottom">
+                    <p class="project-heading"> World Travel Tracker </p><span class="dot">⫶</span>
+                    <p class="pragraph"> 
+                        A web app that can track the countries visited by different users around the world.</p>
+                </div>
+                <div class="cover">
+                    
+                    <ul>
+                        <li><span>Tools:</span> Ejs,CSS,Node.js,Express.js,<br />PostgreSQL.</li>
+                        <li>Register/login to the web app.</li>
+                        <li>This project is based on a PostgreSQL database and is capable of adding new countries as visited, as well as editing and deleting countries for each user.</li>
+                        <li>It stores the previous data into a pgAdmin database</li>
+                        <li>Easy to use with a good user friendly UI.</li>
+                        
+
+                    </ul>
+                    <div class="svg-box">
+                        <img src="/arrow-up-right-square-fill.svg" class="gitpp img img_link_dance" alt="right-arrow" id="arrow"onclick="event.stopPropagation() ; location.href='#'">
+                        <img src="/gitpppp.png" class="gitpp img img_link_dance" alt="github" id="git" onclick="event.stopPropagation() ; location.href='https://github.com/rishabh00712/family-tracker'">
+                    </div>
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="gray" class="bi bi-x-lg img_link_dance" viewBox="0 0 15 15" >
+                        <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z"/>
+                    </svg>
+                </div>
+            </div>
+
+            <div class="project lazy-load"  style="background-image:url(/keeper.jpeg) ;background-size: cover; background-position: center; background-repeat: no-repeat">
+                <div class="bottom">
+                    <p class="project-heading"> Keeper Web-Application</p><span class="dot">⫶</span>
+                    <p class="pragraph"> 
+                        Keeper is a React-based clone of the Google Keep app, designed for storing notes.</p>
+                </div>
+                <div class="cover">
+                    
+                    <ul>
+                        <li><span>Tools:</span> React,HTML,CSS,JavaScript</li>
+                        <li>Register/login to the web app.</li>
+                        <li>This application is based on a full React front-end framework .</li>
+                        <li>No database is included.</li>
+                        <li>The Keeper app leverages React to create<br /> a responsive and efficient platform for managing daily notes and tasks<br /> seamlessly.</li>
+                        <li>Easy to use with a good user friendly UI.</li>
+                        
+
+                    </ul>
+                    <div class="svg-box">
+                        <img src="/arrow-up-right-square-fill.svg" class="gitpp img img_link_dance" alt="right-arrow" id="arrow" onclick="event.stopPropagation() ; location.href='#'">
+                        <img src="/gitpppp.png" class="gitpp img img_link_dance" alt="github" id="git"  onclick="event.stopPropagation() ; location.href='https://github.com/rishabh00712/keeper'">
+                    </div>
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="gray" class="bi bi-x-lg img_link_dance" viewBox="0 0 15 15" >
+                        <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z"/>
+                    </svg>
+                </div>
+            </div>
+            
+    
+
+
+
+            <div class="project lazy-load invisible"  style="background-image:url(/mobile\ 2.jpeg) ;opacity: 0; background-size: cover; background-position: center; background-repeat: no-repeat">
+                <div class="bottom">
+                    <p class="project-heading"> Attendance Tracker Android App </p><span class="dot">⫶</span>
+                    <p class="pragraph"> Meticulously crafted my me and my team.</p>
+                </div>
+                <div class="cover">
+                    
+                    <ul>
+                        <li><span>Tools:</span> XML,Java,SQL</li>
+                        <li>Implementing registration and login functionalities for both faculty and administrators.</li>
+                        <li>Carefully developed by both me and my team, showcasing our collaborative effort.</li>
+                        <li>Ensuring real-time tracking and transparency for organizational efficiency.</li>
+                        <li>I am the front-end developer in our team for this project.</li>   
+
+                    </ul>
+                    <div class="svg-box ">
+                        <img src="/arrow-up-right-square-fill.svg" class="gitpp img img_link_dance" alt="right-arrow" id="arrow" onclick="event.stopPropagation() ; location.href='#'">
+                        <img src="/gitpppp.png" class="gitpp img img_link_dance" alt="github" id="git" onclick="event.stopPropagation() ; location.href='#'">
+                    </div>
+                    <svg xmlns="http://www.w3.org/2000/svg"  fill="gray" class="bi bi-x-lg img_link_dance" viewBox="0 0 15 15" >
+                        <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z"/>
+                    </svg>
+                </div>
+            </div>
+    
+          
+        </div>
+
+
+
+
+        <p class="class_prj">API&nbsp; ENDPOINT</p>
+
+        <div class="boxs_prj">
+
+            <div class="project lazy-load" style="background-image:url(/chclone_pic.jpg) ;background-size: cover; background-position: center; background-repeat: no-repeat">
+                <div class="bottom">
+                    <p class="project-heading"> Cyclone Prediction </p><span class="dot">⫶</span>
+                    <p class="pragraph"> A simple and extensible blog web app based on a private API.</p>
+                </div>
+                <div class="cover">
+                    
+                    <ul>
+                        <li><span>Tools:</span> Ejs,CSS,Node.js,Express.js,<br />Bootstrap.</li>
+                        <li>Register/login to the web app.</li>
+                        <li>This private API base project includes options to add, edit, and delete blog posts.</li>
+                        <li>No database is included. The setup involves two servers: one for handling requests and another for processing and responding accordingly.</li>
+                        <li>Easy to use with a good user friendly UI.</li>
+                        
+
+                    </ul>
+                    <div class="svg-box">
+                        <img src="/arrow-up-right-square-fill.svg" class="img gitpp img_link_dance" alt="right-arrow" id="arrow" onclick="event.stopPropagation() ; location.href='#'">
+                        <img src="/gitpppp.png" class="img gitpp  img_link_dance" alt="github " id="git" onclick="event.stopPropagation() ; location.href='https://github.com/rishabh00712/Blog-Posting-app'">
+                    </div>
+                    <svg xmlns="http://www.w3.org/2000/svg"  fill="gray" class="bi bi-x-lg img_link_dance" viewBox="0 0 15 15" >
+                        <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z"/>
+                    </svg>
+                </div>
+            </div>
+    
+            <div class="project lazy-load" style="background-image:url(/flood_prd.webp) ;background-size: cover; background-position: center; background-repeat: no-repeat">
+                <div class="bottom">
+                    <p class="project-heading"> Flood Prediction </p><span class="dot">⫶</span>
+                    <p class="pragraph"> 
+                        A web app that can track the countries visited by different users around the world.</p>
+                </div>
+                <div class="cover">
+                    
+                    <ul>
+                        <li><span>Tools:</span>Python, Flask, ANN Model, Rest API</li>
+                        <li>Developed a regression AI model to predict flood risk.</li>
+                        <li>Integrated Open-Meteo for weather data from the past two weeks and next week.</li>
+                        <li>Predicted flood probability at specific locations for the next seven days.</li>
+                        <li>Enabled real-time weather analysis to enhance flood predictions.</li>
+
+                        
+
+                    </ul>
+                    <div class="svg-box">
+                        <img src="/arrow-up-right-square-fill.svg" class="gitpp img img_link_dance" alt="right-arrow" id="arrow"onclick="event.stopPropagation() ; location.href='#'">
+                        <img src="/gitpppp.png" class="gitpp img img_link_dance" alt="github img_link_dance" id="git" onclick="event.stopPropagation() ; location.href='https://github.com/rishabh00712/family-tracker'">
+                    </div>
+                    <svg xmlns="http://www.w3.org/2000/svg"  fill="gray" class="bi bi-x-lg img_link_dance" viewBox="0 0 15 15" >
+                        <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z"/>
+                    </svg>
+                </div>
+            </div>
+
+            <div class="project lazy-load invisible"  style="background-image:url(/keeper.jpeg) ;opacity: 0; background-size: cover; background-position: center; background-repeat: no-repeat">
+                <div class="bottom">
+                    <p class="project-heading"> Keeper Web-Application</p><span class="dot">⫶</span>
+                    <p class="pragraph"> 
+                        Keeper is a React-based clone of the Google Keep app, designed for storing notes.</p>
+                </div>
+                <div class="cover">
+                    
+                    <ul>
+                        <li><span>Tools:</span>Python, Flask, ANN Model, Rest API</li>
+                        <li>Developed a Flask-based REST API with a regression AI model to predict cyclone risk.</li>
+                        <li>Integrated Open-Meteo for weather data from the past two weeks and next week.</li>
+                        <li>Predicted cyclone probability at specific locations for the next seven days.</li>
+                        <li>Enabled real-time weather analysis to improve cyclone predictions.</li>
+                        
+                        
+
+                    </ul>
+                    <div class="svg-box">
+                        <img src="/arrow-up-right-square-fill.svg" class="gitpp img img_link_dance" alt="right-arrow" id="arrow" onclick="event.stopPropagation() ; location.href='#'">
+                        <img src="/gitpppp.png" class="gitpp img" alt="github img_link_dance" id="git"  onclick="event.stopPropagation() ; location.href='https://github.com/rishabh00712/keeper'">
+                    </div>
+                    <svg xmlns="http://www.w3.org/2000/svg"  fill="gray" class="bi bi-x-lg img_link_dance" viewBox="0 0 15 15" >
+                        <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z"/>
+                    </svg>
+                </div>
+            </div>
+        </div>   
+            <p class="class_prj">artificial &nbsp;intelligence</p>
+
+        <div class="boxs_prj">
+
+            <div class="project lazy-load" style="background-image:url(/landmark.jpg) ;background-size: cover; background-position: center; background-repeat: no-repeat">
+                <div class="bottom">
+                    <p class="project-heading"> Pet </p><span class="dot">⫶</span>
+                    <p class="pragraph"> A simple and extensible blog web app based on a private API.</p>
+                </div>
+                <div class="cover">
+                    
+                    <ul>
+                        <li><span>Tools:</span> Ejs,CSS,Node.js,Express.js,<br />Bootstrap.</li>
+                        <li>Register/login to the web app.</li>
+                        <li>This private API base project includes options to add, edit, and delete blog posts.</li>
+                        <li>No database is included. The setup involves two servers: one for handling requests and another for processing and responding accordingly.</li>
+                        <li>Easy to use with a good user friendly UI.</li>
+                        
+
+                    </ul>
+                    <div class="svg-box">
+                        <img src="/arrow-up-right-square-fill.svg" style="opacity: 0;"  class="img gitpp img_link_dance" alt="right-arrow" id="arrow" onclick="event.stopPropagation() ; location.href='#'">
+                        <img src="/gitpppp.png" class="img gitpp img_link_dance" alt="github " id="git" onclick="event.stopPropagation() ; location.href='https://github.com/rishabh00712/Blog-Posting-app'">
+                    </div>
+                    <svg xmlns="http://www.w3.org/2000/svg"  fill="gray" class="bi bi-x-lg img_link_dance" viewBox="0 0 15 15" >
+                        <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z"/>
+                    </svg>
+                </div>
+            </div>
+    
+            <div class="project lazy-load" style="background-image:url(/pet_prediction.webp) ;background-size: cover; background-position: center; background-repeat: no-repeat">
+                <div class="bottom">
+                    <p class="project-heading"> World Travel Tracker </p><span class="dot">⫶</span>
+                    <p class="pragraph"> 
+                        A web app that can track the countries visited by different users around the world.</p>
+                </div>
+                <div class="cover">
+                    
+                    <ul>
+                        <li><span>Tools:</span> Ejs,CSS,Node.js,Express.js,<br />PostgreSQL.</li>
+                        <li>Register/login to the web app.</li>
+                        <li>This project is based on a PostgreSQL database and is capable of adding new countries as visited, as well as editing and deleting countries for each user.</li>
+                        <li>It stores the previous data into a pgAdmin database</li>
+                        <li>Easy to use with a good user friendly UI.</li>
+                        
+
+                    </ul>
+                    <div class="svg-box">
+                        <img src="/arrow-up-right-square-fill.svg" style="opacity: 0;" class="gitpp img img_link_dance" alt="right-arrow" id="arrow"onclick="event.stopPropagation() ; location.href='#'">
+                        <img src="/gitpppp.png" class="gitpp img img_link_dance" alt="github" id="git" onclick="event.stopPropagation() ; location.href='https://github.com/rishabh00712/family-tracker'">
+                    </div>
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="gray" class="bi bi-x-lg img_link_dance" viewBox="0 0 15 15" >
+                        <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z"/>
+                    </svg>
+                </div>
+            </div>
+
+            <div class="project lazy-load invisible"  style="background-image:url(/keeper.jpeg) ;opacity: 0; background-size: cover; background-position: center; background-repeat: no-repeat">
+                <div class="bottom">
+                    <p class="project-heading"> Keeper Web-Application</p><span class="dot">⫶</span>
+                    <p class="pragraph"> 
+                        Keeper is a React-based clone of the Google Keep app, designed for storing notes.</p>
+                </div>
+                <div class="cover">
+                    
+                    <ul>
+                        <li><span>Tools:</span> React,HTML,CSS,JavaScript</li>
+                        <li>Register/login to the web app.</li>
+                        <li>This application is based on a full React front-end framework .</li>
+                        <li>No database is included.</li>
+                        <li>The Keeper app leverages React to create<br /> a responsive and efficient platform for managing daily notes and tasks<br /> seamlessly.</li>
+                        <li>Easy to use with a good user friendly UI.</li>
+                        
+
+                    </ul>
+                    <div class="svg-box">
+                        <img src="/arrow-up-right-square-fill.svg" class="gitpp img img_link_dance" alt="right-arrow" id="arrow" onclick="event.stopPropagation() ; location.href='#'">
+                        <img src="/gitpppp.png" class="gitpp img" alt="github" id="git"  onclick="event.stopPropagation() ; location.href='https://github.com/rishabh00712/keeper'">
+                    </div>
+                    <svg xmlns="http://www.w3.org/2000/svg"  fill="gray" class="bi bi-x-lg img_link_dance" viewBox="0 0 15 15" >
+                        <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z"/>
+                    </svg>
+                </div>
+            </div>
+
+            </div>
+            <p class="class_prj">Mobile &nbsp;Application</p>
+
+            <div class="boxs_prj">
+    
+                <div class="project lazy-load"  style="background-image:url(/mobile\ 2.jpeg) ;background-size: cover; background-position: center; background-repeat: no-repeat">
+                    <div class="bottom">
+                        <p class="project-heading"> Attendance Tracker Android App </p><span class="dot">⫶</span>
+                        <p class="pragraph"> Meticulously crafted my me and my team.</p>
+                    </div>
+                    <div class="cover">
+                        
+                        <ul>
+                            <li><span>Tools:</span> XML,Java,SQL</li>
+                            <li>Implementing registration and login functionalities for both faculty and administrators.</li>
+                            <li>Carefully developed by both me and my team, showcasing our collaborative effort.</li>
+                            <li>Ensuring real-time tracking and transparency for organizational efficiency.</li>
+                            <li>I am the front-end developer in our team for this project.</li>   
+    
+                        </ul>
+                        <div class="svg-box max-img">
+                            <img src="/arrow-up-right-square-fill.svg"style="opacity: 0;" class="gitpp img img_link_dance" alt="right-arrow" id="arrow" onclick="event.stopPropagation() ; location.href='#'">
+                            <img src="/gitpppp.png" class="gitpp img img_link_dance" alt="github" id="git" onclick="event.stopPropagation() ; location.href='#'">
+                        </div>
+                        <div class=" max-cross" >
+                            <svg xmlns="http://www.w3.org/2000/svg"  fill="gray" class="bi bi-x-lg img_link_dance" viewBox="0 0 15 15"  >
+                                <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z"/>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="project lazy-load invisible"  style="background-image:url(/map.jpeg);opacity: 0; ;background-size: cover; background-position: center; background-repeat: no-repeat">
+                    <div class="bottom">
+                        <p class="project-heading"> World Travel Tracker </p><span class="dot">⫶</span>
+                        <p class="pragraph"> 
+                            A web app that can track the countries visited by different users around the world.</p>
+                    </div>
+                    <div class="cover">
+                        
+                        <ul>
+                            <li><span>Tools:</span> Ejs,CSS,Node.js,Express.js,<br />PostgreSQL.</li>
+                            <li>Register/login to the web app.</li>
+                            <li>This project is based on a PostgreSQL database and is capable of adding new countries as visited, as well as editing and deleting countries for each user.</li>
+                            <li>It stores the previous data into a pgAdmin database</li>
+                            <li>Easy to use with a good user friendly UI.</li>
+                            
+    
+                        </ul>
+                        <div class="svg-box">
+                            <img src="/arrow-up-right-square-fill.svg" class="gitpp img img_link_dance" alt="right-arrow" id="arrow"onclick="event.stopPropagation() ; location.href='#'">
+                            <img src="/gitpppp.png" class="gitpp img img_link_dance" alt="github" id="git" onclick="event.stopPropagation() ; location.href='https://github.com/rishabh00712/family-tracker'">
+                        </div>
+                        <svg xmlns="http://www.w3.org/2000/svg"  fill="gray" class="bi bi-x-lg img_link_dance " viewBox="0 0 15 15" >
+                            <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z"/>
+                        </svg>
+                    </div>
+                </div>
+    
+                <div class="project lazy-load invisible"  style="background-image:url(/keeper.jpeg) ;opacity: 0; background-size: cover; background-position: center; background-repeat: no-repeat">
+                    <div class="bottom">
+                        <p class="project-heading"> Keeper Web-Application</p><span class="dot">⫶</span>
+                        <p class="pragraph"> 
+                            Keeper is a React-based clone of the Google Keep app, designed for storing notes.</p>
+                    </div>
+                    <div class="cover">
+                        
+                        <ul>
+                            <li><span>Tools:</span> React,HTML,CSS,JavaScript</li>
+                            <li>Register/login to the web app.</li>
+                            <li>This application is based on a full React front-end framework .</li>
+                            <li>No database is included.</li>
+                            <li>The Keeper app leverages React to create<br /> a responsive and efficient platform for managing daily notes and tasks<br /> seamlessly.</li>
+                            <li>Easy to use with a good user friendly UI.</li>
+                            
+    
+                        </ul>
+                        <div class="svg-box app">
+                            <img src="/arrow-up-right-square-fill.svg" class="gitpp img img_link_dance" alt="right-arrow" id="arrow" onclick="event.stopPropagation() ; location.href='#'">
+                            <img src="/gitpppp.png" class="gitpp img img_link_dance" alt="github" id="git"  onclick="event.stopPropagation() ; location.href='https://github.com/rishabh00712/keeper'">
+                        </div>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="gray" class="bi bi-x-lg img_link_dance" viewBox="0 0 15 15" >
+                            <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z"/>
+                        </svg>
+                    </div>
+                </div>
+
+        </div>
+    </div>
+
+    <div id="loading-screen">
+        <div class="loader">
+            <div class="square"></div>
+            <div class="square"></div>
+            <div class="square"></div>
+        </div>
+    </div>
+    
+    <script>
+    document.addEventListener("DOMContentLoaded", function () {
+    let options = {
+        root: null, // viewport
+        rootMargin: "0px",
+        threshold: 0.2, // Trigger when 10% of the element is visible
+    };
+
+    let observer = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                let block = entry.target;
+                block.classList.add("loaded"); // Show the block (by adding a loaded class)
+                 // Set background image
+                observer.unobserve(block); // Stop observing once loaded
+            }
+        });
+    }, options);
+
+    // Observe all lazy-load blocks
+        document.querySelectorAll(".lazy-load").forEach(block => {
+            observer.observe(block);
+        });
+    });
+
+    window.addEventListener('load', function () {
+        const sound = new Audio("/page_sound.mp3"); // Ensure correct path to sound
+        sound.play();
+        // Hide the loading screen after the page is fully loaded
+        setTimeout(function () {
+            document.getElementById('loading-screen').style.display = 'none';
+            document.getElementById('content').style.display = 'block';
+        }, 2000); // Adjust the time as needed (in ms)
+    });
+    
+    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <script src="/java_scr/java3.js" charset="UTF-8"></script>
+    <script src="/java_scr/home.js" charset="UTF-8"></script>
+</body>
+</html>
+
+

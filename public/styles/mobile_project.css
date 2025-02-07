@@ -1,0 +1,107 @@
+
+@media screen and (max-width: 980px) {
+    .boxs_prj{
+        display: flex;
+        flex-wrap: wrap; 
+        justify-content: center;
+        background-color: white;
+        width: auto;
+        height: auto;
+    }
+
+    .project{
+    
+        width: 600px;
+        padding: 20px;
+        margin: 30px;
+        position: relative;
+        overflow: hidden;
+        height: 300px; /* Adjust height as needed */
+        background-color: black; /* Example background for project */
+         position: relative; /* Ensure positioning context for absolute child */
+         overflow: hidden; /* Hide overflow to prevent showing content outside */
+         cursor: pointer; 
+         border: 1px solid #ccc;
+         box-shadow: 0 0px 10px rgba(38, 12, 104, 0.75), 0 12px 40px rgba(0, 0, 0, 0.2);
+         
+    }
+    #arrow-fix{
+        font-size: 50px;
+    }
+    .cover{
+        
+        height: 100%;
+        width: 100%;
+        font-size: 30px;
+        position: relative;
+        bottom: 20px;
+        right: 20px; 
+        position: absolute;
+        bottom: -100%; /* Initially hidden */
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: lightgray;
+        transition: bottom 0.5s ease; /* Smooth transition */
+        color: rgba(24, 21, 21, 0.847);
+    }
+    .bottom{
+        background-color: rgb(236, 228, 229);
+        height: 140px;
+        width: 100%;
+        padding: 20px;
+        
+        position: relative;
+        margin-top: 220px;
+        right: 20px;
+        top: 120px;
+        font-size: 35px;
+    }
+    .dot{
+        position: relative;
+        bottom: 105px; 
+        left: 590px;
+        color: #50B498;
+        font-weight: bold;
+    }
+    .pragraph{
+        position: relative;
+        bottom: 125px;
+        font-size:medium;
+        font-weight: 300;
+        color: black;
+        font-family: Arial Verdana Helvetica;
+        font-size: 25px;
+        line-height: 1.4;
+    }
+    .svg-box{
+        position: relative;
+        bottom: 0%;
+        left:73%;
+     }
+     .gitpp{
+        height: 80px;
+        width: 80px;
+        
+     }
+    .bi-x-lg{
+       position: relative;
+       top: -530px;
+     
+       height: 20px;
+       width: 20px;
+    }
+    .invisible{
+        display: none;
+    }
+    .class_prj{
+        font-size: 30px;
+    }
+
+}
+
+
+
+
+
+

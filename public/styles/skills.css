@@ -1,0 +1,78 @@
+.skill_item {
+    height: 100px;
+    width: 100px;
+    margin: 20px;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+#languages,
+#libraries,
+#Frameworks,
+#others {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.container {
+    flex-wrap: wrap;
+}
+
+#skill_contain {
+    padding-left: 100px;
+    padding-right: 100px;
+    color: gray;
+    font-size: 20px;
+
+
+}
+.gititem{
+    width: 200px;
+}
+
+.headings {
+    text-transform: uppercase;
+    font-weight: 500;
+    margin-bottom: 0px;
+}
+
+.lazy-load {
+    opacity: 0;
+    /* Initially hidden */
+    transition: opacity 0.3s ease-in-out, box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.lazy-load.loaded {
+    opacity: .8;
+    /* When loaded, set opacity to 0.8 */
+}
+
+.lazy-load:hover {
+    opacity: 1;
+    /* On hover, set opacity to 1 */
+    box-shadow: 20px 20px 15px rgba(0, 0, 0, 0.3);
+    transform: translateY(-5px);
+    /* Moves the box up by 10px */
+}
+
+hr {
+    margin-top: 0px;
+    margin-bottom: 30px;
+}
+
+@media screen and (max-width: 980px) {
+    .skill_item{
+        height: 300px;
+        width: 300px;
+    }
+    .headings{
+        font-size: 40px;
+    }
+    p{
+        font-size: 30px;
+    }
+    .gititem{
+        width: 300px;
+    
+    }
+}

@@ -1,0 +1,143 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+ 
+    
+}
+
+li{
+    font-size: 15px;
+}
+
+.resume-container {
+    width: 70%;
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 39px 39px rgba(0, 0, 0, 0.1);
+    font-size: 18px;
+}
+
+.experience-section {
+    margin-bottom: 30px;
+}
+
+.section-title {
+    font-size: 28px;
+    color: #174012;
+    margin-bottom: 8px;
+    font-weight: bold;
+    padding-bottom: 0px;
+    text-transform: uppercase;
+}
+
+.date {
+    font-size: 18px;
+    color: #777;
+    margin-bottom: 20px;
+}
+
+.project {
+    margin-bottom: 40px;
+    background-color: #fafafa;
+    padding: 20px;
+    border-radius: 8px;
+    border-left: 5px solid #4CAF50; /* Green line to accent project */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.project-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.project-title {
+    font-size: 24px;
+    color: #5B913B;
+    text-transform: uppercase;
+}
+
+.project-icon {
+    font-size: 30px;
+}
+
+.heading_pints{
+    color: #77B254;
+    font-size: 22px;
+}
+.project-description {
+    font-size: 20px;
+    color: #555;
+    margin-bottom: 15px;
+    font-family: serif;
+    
+}
+
+.project-details {
+    list-style-type: none;
+    margin-left: 20px;
+}
+
+.project-details li {
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+.project-details li strong {
+    color: #4CAF50;
+}
+
+.project-details li:nth-child(odd) {
+    background-color: #f9f9f9;
+    border-radius: 5px;
+}
+
+#exp_body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 40px;
+    gap: 20px;
+}
+.fixed-anchor-left{
+    left: 60px;
+}
+
+#certificate{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    border-bottom: 3px solid #4CAF50;
+    padding: 0px;
+}
+
+@keyframes dance {
+    0% { transform: translateX(0); }
+    25% { transform: translateX(-5px) rotate(-5deg); }
+    50% { transform: translateX(5px) rotate(5deg); }
+    75% { transform: translateX(-5px) rotate(-5deg); }
+    100% { transform: translateX(5px) rotate(5deg); }
+  }
+  
+  .project-icon:hover {
+    display: inline-block; /* Needed for transform to work */
+    animation: dance 0.3s infinite ease-in-out;
+}
+
+.lazy-load {
+    opacity: 0; /* Initially hidden */
+    transition: opacity 0.3s ease-in-out, box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.lazy-load.loaded {
+    opacity: .8; /* When loaded, set opacity to 0.8 */
+}
+
+.lazy-load:hover {
+    opacity: 1; /* On hover, set opacity to 1 */
+    box-shadow: 20px 20px 15px rgba(0, 0, 0, 0.3);
+    transform: translateY(-5px); /* Moves the box up by 10px */
+}

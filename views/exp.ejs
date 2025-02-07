@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>My Website</title>
+  <link rel="stylesheet" href="/styles/style.css">
+  <link rel="stylesheet" href="/styles/style2.css">
+  <link rel="stylesheet" href="/styles/home.css">
+  <link rel="stylesheet" href="/styles/exp.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+
+</head>
+<style>
+ #experiences {
+    background: linear-gradient(135deg, #50B498, #3a8d7a);
+    color: white;
+    border: none;
+    padding: 12px 18px;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.2);
+  }
+  #experiences:hover {
+  background: linear-gradient(135deg, #3a8d7a, #2c7b6c);
+  transform: scale(1.1);
+  box-shadow: 2px 6px 15px rgba(0, 0, 0, 0.3);
+  }
+
+  svg{
+    position: relative;
+    bottom: 5px;
+  }
+</style>
+
+<body>
+  <%- include('partials/header') %>
+
+    <p class="heading">experience</p>
+
+
+    <a href="./projects" class="fixed-anchor-left" id="arrow">⬅️</a>
+    <a href="./education" class="fixed-anchor" id="arrow">➡️</a>
+
+    <div id="exp_body">
+
+      <div class="resume-container lazy-load">
+        <div class="experience-section">
+          <div id="certificate">
+            <h2 class="section-title">Artificial Intelligence - Hybrid, 1stop</h2>
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" onclick="location.href='/1stop'" class="svg_proj svg_link"
+            viewBox="0 0 16 16" style="vertical-align: middle; padding-bottom: 0px;">
+            <path fill-rule="evenodd"
+              d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5" />
+            <path fill-rule="evenodd"
+              d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0z" />
+          </svg>
+
+          </div>
+          
+          <p class="date">November 2024 - January 2025</p>
+
+          <!-- Pet Classification Project -->
+          <div class="project lazy-load">
+            <div class="project-header">
+              <h3 class="project-title">Pet Classification</h3>
+              <span class="project-icon">🐾</span>
+            </div>
+            <div class="project-description">
+              <p>Developed an advanced neural network model for the classification of various pet breeds from images.
+                Leveraged cutting-edge image recognition techniques to automate the classification process, providing
+                quick and accurate results.</p>
+            </div>
+            <ul class="project-details">
+              <li><strong class="heading_pints">Technologies:</strong> TensorFlow, Keras, Python</li>
+              <li><strong class="heading_pints">Key Achievement:</strong> Optimized the model to achieve up to 96% accuracy in classifying
+                different pet breeds.</li>
+              <li><strong class="heading_pints">Impact:</strong> Streamlined the process for businesses in the pet industry to automate pet
+                identification and improve user experiences.</li>
+            </ul>
+          </div>
+
+          <!-- Landmark Detection Project -->
+          <div class="project lazy-load">
+            <div class="project-header">
+              <h3 class="project-title">Landmark Detection</h3>
+              <span class="project-icon">🏛️</span>
+            </div>
+            <div class="project-description">
+              <p>Created an AI-powered landmark detection system using object detection algorithms. This project aimed
+                at identifying and classifying landmarks with a high degree of accuracy, enhancing geo-location
+                services.
+              </p>
+            </div>
+            <ul class="project-details">
+              <li><strong class="heading_pints">Technologies:</strong> OpenCV, YOLO, Python</li>
+              <li><strong class="heading_pints">Key Achievement:</strong> Implemented a model capable of detecting multiple landmarks in
+                images with a precision rate of 95%.</li>
+              <li><strong class="heading_pints">Impact:</strong> The system supports real-time location-based applications and enhances
+                navigation services for users.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="resume-container lazy-load">
+        <div class="experience-section">
+          <div id="certificate">
+            <h2 class="section-title">Research Intern under Professor Tamal Pal, IIEST Shibpur</h2>
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"  fill="currentColor" class="svg_proj_big "
+            viewBox="0 0 16 16" style="vertical-align: middle; padding-bottom: 0px;">
+            <path fill-rule="evenodd"
+              d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5" />
+            <path fill-rule="evenodd"
+              d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0z" />
+          </svg>
+
+          </div>
+            <p class="date">September 2024 - Present</p>
+
+            <!-- Flood Simulation Project -->
+            <div class="project lazy-load">
+                <div class="project-header">
+                    <h3 class="project-title">Flood Simulation Web Application</h3>
+                    <span class="project-icon">🌊</span>
+                </div>
+                <div class="project-description">
+                    <p>Designed a web-based flood simulation tool using 2D models, incorporating an artificial neural network (ANN) for highly accurate flood predictions.</p>
+                </div>
+                <ul class="project-details">
+                    <li><strong class="heading_pints">Technologies:</strong> TensorFlow, JavaScript, React, Python, OpenWeather API</li>
+                    <li><strong class="heading_pints">Key Achievement:</strong> Achieved 97% prediction accuracy using an ANN model.</li>
+                    <li><strong class="heading_pints">Real-Time Data:</strong> Integrated real-time weather data to simulate dynamic sea levels.</li>
+                    <li><strong class="heading_pints">User Insights:</strong> Implemented daily news updates for disaster preparedness.</li>
+                    <li><strong class="heading_pints">Impact:</strong> Provides an interactive world map to visualize flood-prone areas, aiding researchers and policymakers.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    </div>
+    <div id="loading-screen">
+      <div class="loader">
+          <div class="square"></div>
+          <div class="square"></div>
+          <div class="square"></div>
+      </div>
+    </div>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+    let options = {
+        root: null, // viewport
+        rootMargin: "0px",
+        threshold: 0.4, // Trigger when 10% of the element is visible
+    };
+
+    let observer = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                let block = entry.target;
+                block.classList.add("loaded"); // Show the block (by adding a loaded class)
+                 // Set background image
+                observer.unobserve(block); // Stop observing once loaded
+            }
+        });
+    }, options);
+
+    // Observe all lazy-load blocks
+        document.querySelectorAll(".lazy-load").forEach(block => {
+            observer.observe(block);
+        });
+    });
+
+      window.addEventListener('load', function () {
+        const sound = new Audio("/page_sound.mp3"); // Ensure correct path to sound
+        sound.play();
+            // Hide the loading screen after the page is fully loaded
+            setTimeout(function () {
+                document.getElementById('loading-screen').style.display = 'none';
+                document.getElementById('content').style.display = 'block';
+            }, 500); // Adjust the time as needed (in ms)
+        });
+    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <script src="/java_scr/home.js" charset="UTF-8"></script>
+
+</body>
+
+</html>

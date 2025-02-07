@@ -1,0 +1,94 @@
+@media screen and (max-width: 980px) {
+    body {
+        font-size: 40px;
+    }
+
+    .menu-icon {
+        width: 60px;
+        /* Increase the width */
+        height: 50px;
+        /* Increase the height */
+        position: relative;
+        right: 50px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .heading {
+        font-size: 60px;
+        
+    }
+
+    .edit {
+        font-size: 50px;
+    }
+
+    #demo {
+        font-size: 50px;
+    }
+
+    .bi {
+        width: 65px;
+        height: 65px;
+    }
+
+    .nav-button samp {
+        display: none;
+    }
+
+    .nav-button svg {
+        width: 45px;
+    }
+
+    .img_div {
+        display: none;
+    }
+
+    header {
+        height: 150px;
+    }
+
+    .bar {
+        /* Ensuring the bars are consistent even on smaller screens */
+        width: 100%;
+        height: 5px;
+    }
+
+    .menu-icon.active .bar:nth-child(1) {
+        transform: translateY(23px) rotate(45deg);
+    }
+
+    .menu-icon.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .menu-icon.active .bar:nth-child(3) {
+        transform: translateY(-23px) rotate(-45deg);
+    }
+    #heading{
+        font-size: 60px;
+    }
+    #arrow{
+        font-size: 50px;
+        margin-right: 10px;
+    }
+    .resume-container{
+        width: 80%;
+    }
+    .project-title{
+        font-size: 36px;
+    }
+    .svg_proj{
+        height: 30px;
+        width: 30px;
+        position: relative;
+        bottom: 12px;
+    }
+    .svg_proj_big{
+        height: 45px;
+        width: 45px;
+        position: relative;
+        top: 3px;
+    }
+    
+}

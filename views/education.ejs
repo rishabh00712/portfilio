@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>My Website</title>
+  <link rel="stylesheet" href="/styles/style.css">
+  <link rel="stylesheet" href="/styles/style2.css">
+  <link rel="stylesheet" href="/styles/home.css">
+  <link rel="stylesheet" href="/styles/exp.css">
+  <link rel="stylesheet" href="/styles/education.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+
+</head>
+<style>
+#education {
+    background: linear-gradient(135deg, #50B498, #3a8d7a);
+    color: white;
+    border: none;
+    padding: 12px 18px;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.2);
+  }
+  #education:hover {
+  background: linear-gradient(135deg, #3a8d7a, #2c7b6c);
+  transform: scale(1.1);
+  box-shadow: 2px 6px 15px rgba(0, 0, 0, 0.3);
+  }
+
+  svg{
+    position: relative;
+    bottom: 5px;
+  }
+</style>
+
+<body>
+  <%- include('partials/header') %>
+
+    <p class="heading">education</p>
+
+
+    <a href="./exp" class="fixed-anchor-left" id="arrow">⬅️</a>
+    <a href="./skill" class="fixed-anchor" id="arrow">➡️</a>
+
+    <div id="exp_body">
+
+      <div class="resume-container lazy-load">
+        <div class="experience-section">
+          <div id="certificate">
+            <h2 class="section-title">Indian Institute of Engineering Science and Technology</h2>
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" onclick="location.href='#'" class="svg_proj_big "
+            viewBox="0 0 16 16" style="vertical-align: middle; padding-bottom: 0px;">
+            <path fill-rule="evenodd"
+              d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5" />
+            <path fill-rule="evenodd"
+              d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0z" />
+          </svg>
+
+          </div>
+          <div class="loc-date">
+            <p class="location">Shibpur,Howrah</p>
+            <p class="date">November  2022 - May 2026</p>
+
+          </div>
+          
+          <!-- Pet Classification Project -->
+          <div class="project lazy-load">
+            <div class="project-header">
+              <h3 class="project-title">Bachelor's of Computer Science and Technology</h3>
+            </div>
+            <div class="project-description">
+                <p class="headings cgpa"><span class="head">CGPA:</span> 8.15/10</p>
+                <p class="head course">Relevant Coursework</p>
+            </div>
+            <ul class="project-details course_name">
+                <li>Data Structure and Algorithams</li>
+                <li>Digital Logic</li>
+                <li>Discrete Structures</li>
+                <li>Theory of Computation</li>
+                <li>Programming Paradigms</li>
+                <li>Design and Analysis of Algorithms</li>
+                <li>Computer Architecture and organisation-I</li>
+                <li>Data Science</li>
+            </ul>
+          </div>
+
+          
+        </div>
+      </div>
+
+      <div class="resume-container School lazy-load">
+        <div class="experience-section">
+          <div id="certificate">
+            <h2 class="section-title School">Burdwan C.M.S. High School</h2>
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" onclick="location.href='/hs_res'" class="svg_proj svg_link"
+            viewBox="0 0 16 16" style="vertical-align: middle; padding-bottom: 0px;">
+            <path fill-rule="evenodd"
+              d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5" />
+            <path fill-rule="evenodd"
+              d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0z" />
+          </svg>
+
+          </div>
+          <div class="loc-date">
+            <p class="location">Burdwan,West bengol</p>
+            <p class="date">January  2019 - January 2020</p>
+
+          </div>
+          
+          <div class="project lazy-load">
+            <div class="project-header">
+              <h3 class="project-title">higher secondary</h3>
+            </div>
+            <div class="project-description">
+                <p class="headings cgpa"><span class="head">Percentage:</span> 87 Present</p>
+                <p class="head course">Relevant Coursework</p>
+            </div>
+            <ul class="project-details course_name">
+                <li>Physic</li>
+                   <li>Chemistry</li>
+                   <li>Math</li>
+                   <li>Biology</li>
+            </ul>
+          </div>
+
+          
+        </div>
+      </div>
+
+      <div class="resume-container School lazy-load">
+        <div class="experience-section">
+          <div id="certificate">
+            <h2 class="section-title School">Burdwan C.M.S. High School</h2>
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" onclick="location.href='/madh_res'" class="svg_proj svg_link"
+            viewBox="0 0 16 16" style="vertical-align: middle; padding-bottom: 0px;">
+            <path fill-rule="evenodd"
+              d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5" />
+            <path fill-rule="evenodd"
+              d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0z" />
+          </svg>
+
+          </div>
+          <div class="loc-date">
+            <p class="location">Burdwan,West bengol</p>
+            <p class="date">January  2015 -January  2019</p>
+
+          </div>
+          
+          <div class="project lazy-load">
+            <div class="project-header">
+              <h3 class="project-title">Madhyamik </h3>
+            </div>
+            <div class="project-description">
+                <p class="headings cgpa"><span class="head">Percentage:</span> 86 Present</p>
+                <p class="head course">Relevant Coursework</p>
+            </div>
+            <ul class="project-details course_name">
+                   <li>Bengali</li>
+                   <li>English</li>
+                   <li>Math</li>
+                   <li>Physical Science</li>
+                   <li>Life Science</li>
+                   <li>History</li>
+                   <li>Geography</li>
+            </ul>
+          </div>
+
+          
+        </div>
+      </div>
+
+    </div>
+    <div id="loading-screen">
+      <div class="loader">
+          <div class="square"></div>
+          <div class="square"></div>
+          <div class="square"></div>
+      </div>
+    </div>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+    let options = {
+        root: null, // viewport
+        rootMargin: "0px",
+        threshold: 0.3, // Trigger when 10% of the element is visible
+    };
+
+    let observer = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                let block = entry.target;
+                block.classList.add("loaded"); // Show the block (by adding a loaded class)
+                 // Set background image
+                observer.unobserve(block); // Stop observing once loaded
+            }
+        });
+    }, options);
+
+    // Observe all lazy-load blocks
+        document.querySelectorAll(".lazy-load").forEach(block => {
+            observer.observe(block);
+        });
+    });
+
+      window.addEventListener('load', function () {
+        
+        const sound = new Audio("/page_sound.mp3"); // Ensure correct path to sound
+        sound.play();
+            // Hide the loading screen after the page is fully loaded
+            setTimeout(function () {
+                document.getElementById('loading-screen').style.display = 'none';
+                document.getElementById('content').style.display = 'block';
+            }, 500); // Adjust the time as needed (in ms)
+        });
+    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <script src="/java_scr/home.js" charset="UTF-8"></script>
+
+</body>
+
+</html>

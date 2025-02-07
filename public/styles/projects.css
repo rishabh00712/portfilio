@@ -1,0 +1,209 @@
+.boxs_prj{
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center;
+    background-color: white;
+
+}
+
+.project{
+    
+    height: 350px;
+    width: 350px;
+    padding: 20px;
+    margin: 30px;
+    position: relative;
+    overflow: hidden;
+    height: 300px; /* Adjust height as needed */
+    background-color: black; /* Example background for project */
+     /* Spacing between projects */
+     position: relative; /* Ensure positioning context for absolute child */
+     overflow: hidden; /* Hide overflow to prevent showing content outside */
+     cursor: pointer; 
+     border: 1px solid #ccc;
+     box-shadow: 0 0px 10px rgba(38, 12, 104, 0.75), 0 12px 40px rgba(0, 0, 0, 0.2);
+     opacity: 0;
+}
+
+
+.cover{
+    
+    height: 100%;
+    width: 100%;
+    
+    position: relative;
+    bottom: 20px;
+    right: 20px; 
+    position: absolute;
+    bottom: -100%; /* Initially hidden */
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: lightgray;
+    transition: bottom 0.5s ease; /* Smooth transition */
+    color: rgba(24, 21, 21, 0.847);
+}
+.svg-box{
+   position: relative;
+   bottom: 0%;
+   left:70%;
+}
+
+
+#git{
+    position: relative;
+    right: 100px;
+    
+}
+#arrow{
+
+    height: 45px;
+    width: 45px;
+ 
+}
+.bottom{
+    background-color: rgb(236, 228, 229);
+    height: 60.33px;
+    width: 100%;
+    padding: 20px;
+    position: relative;
+    margin-top: 220px;
+    right: 20px;
+
+}
+span{
+    font-weight: bold;
+    font-size: larger;
+}
+.project-heading{
+    position: relative;
+    bottom: 20px;
+    color: #50B498;
+    font-weight: bold;
+
+}
+
+.pragraph{
+    position: relative;
+    bottom: 75px;
+    font-size:medium;
+    font-weight: 200;
+    color: black;
+    font-family: Arial Verdana Helvetica;
+}
+.bi-x-lg{
+    position: relative;
+    bottom: 360px;
+    left: 87%;
+    height: 26px;
+    width: 26px;
+    
+}
+.img{
+    height: 100px;
+    width: 100px;
+    margin: 20px;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+.gitpp{
+    height: 45px;
+    width: 45px;
+}
+.container.body{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+
+}
+.class_prj{
+    color: gray;
+    font-size: 20px;
+    position: relative;
+    left: 110px;
+    width: 90%;
+    border-bottom: 1px black solid;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+.underline{
+    background-color: black;
+    position: relative;
+    z-index: 10;
+}
+
+.lazy-load {
+    opacity: 0; /* Initially hidden */
+    transition: opacity 0.3s ease-in-out, box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.lazy-load.loaded {
+    opacity: 0.7; /* When loaded, set opacity to 0.8 */
+}
+
+.lazy-load:hover {
+    opacity: 1; /* On hover, set opacity to 1 */
+    box-shadow: 20px 20px 15px rgba(0, 0, 0, 0.3);
+    transform: translateY(-10px); /* Moves the box up by 10px */
+}
+
+
+
+/* Full-screen loader */
+#loading-screen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(233, 233, 233, 0.814); /* Dark background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+.loader {
+    display: flex;
+    gap: 10px;
+}
+
+.loader .square {
+    width: 20px;
+    height: 20px;
+    background-color: #50B498;
+    animation: fade 1.2s infinite ease-in-out;
+}
+
+/* Delays for each square */
+.loader .square:nth-child(1) {
+    animation-delay: 0s;
+}
+
+.loader .square:nth-child(2) {
+    animation-delay: 0.4s;
+}
+
+.loader .square:nth-child(3) {
+    animation-delay: 0.8s;
+}
+
+@keyframes fade {
+    0%, 100% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+}
+
+.git_arrow_box{
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 100px;
+}
+#arrow{
+    position: relative;
+    right: 14px;
+}

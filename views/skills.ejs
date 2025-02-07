@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>My Website</title>
+    <link rel="stylesheet" href="/styles/style.css">
+    <link rel="stylesheet" href="/styles/style2.css">
+    <link rel="stylesheet" href="/styles/skills.css">
+    <link rel="stylesheet" href="/styles/home.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+</head>
+<style>
+    .fixed-anchor-left {
+        position: relative;
+        left: 50px;
+        z-index: 2;
+    }
+
+    #skills {
+    background: linear-gradient(135deg, #50B498, #3a8d7a);
+    color: white;
+    border: none;
+    padding: 12px 18px;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.2);
+  }
+  #skills:hover {
+  background: linear-gradient(135deg, #3a8d7a, #2c7b6c);
+  transform: scale(1.1);
+  box-shadow: 2px 6px 15px rgba(0, 0, 0, 0.3);
+  }
+</style>
+
+<body>
+    <%- include('partials/header') %>
+        <p class="heading">SKILLS</p>
+
+        <div id="skill_contain">
+            <div class="container ">
+                <a href="./education" class="fixed-anchor-left afix" id="arrow">⬅️</a>
+                <a href="./contact" class="fixed-anchor afix" id="arrow">➡️</a>
+
+                <p class="headings">Languages and Databases</p>
+                <hr />
+                <div id="languages">
+
+                    <div class="lazy-load">
+                        <img class="skill_item" src="/images.jpg" alt="java immage">
+                        <p style="text-align: center;">Python</p>
+                    </div>
+                    <div class="lazy-load">
+                        <img class="skill_item" src="/c++.png" alt="java immage">
+                        <p style="text-align: center;">C++</p>
+                    </div>
+                    <div class="lazy-load">
+                        <img class="skill_item" src="/javaScript.png" style="height: 250; width: 250;"
+                            alt="java immage">
+                        <p style="text-align: center;">JavaScript</p>
+                    </div>
+                    <div class="lazy-load">
+                        <img class="skill_item" src="/Sql.jpg" alt="java immage">
+                        <p style="text-align: center;">SQL</p>
+                    </div>
+                    <div class="lazy-load">
+                        <img class="skill_item" src="/images (2).png" alt="java immage">
+                        <p style="text-align: center;">HTML</p>
+                    </div>
+
+                    <div class="lazy-load">
+                        <img class="skill_item" src="/css3.svg" alt="java immage">
+                        <p style="text-align: center;">CSS</p>
+                    </div>
+                    <div class="lazy-load">
+                        <img class="skill_item" src="/ejs.png" alt="java immage">
+                        <p style="text-align: center;">EJS</p>
+                    </div>
+                    
+                </div>
+                <p class="headings">Libraries</p>
+                <hr />
+                <div id="libraries">
+                    <div class="lazy-load">
+                        <img class="skill_item" src="/React.webp" alt="java immage">
+                        <p style="text-align: center;">React.js</p>
+                    </div>
+                    
+                    <div class="lazy-load">
+                        <img class="skill_item" src="/jquery-1-logo.png" alt="java immage">
+                        <p style="text-align: center;">JQuery</p>
+                    </div>
+                    <div class="lazy-load">
+                        <img class="skill_item" src="/stl.png" alt="java immage">
+                        <p style="text-align: center;">STL</p>
+                    </div>
+                    <div class="lazy-load">
+                        <img class="skill_item" src="/pytorch.png" alt="java immage">
+                        <p style="text-align: center;">Pytorch</p>
+                    </div>
+                </div>
+                <p class="headings">Frameworks</p>
+                <hr />
+                <div id="Frameworks">
+                    <div class="lazy-load">
+                        <img class="skill_item" src="/images (1).jpg" alt="java immage">
+                        <p style="text-align: center;">Bootstrap</p>
+                    </div>
+                    <div class="lazy-load">
+                        <img class="skill_item" src="/node.png" alt="java immage">
+                        <p style="text-align: center;">Node.js</p>
+                    </div>
+                    <div class="lazy-load">
+                        <img class="skill_item" src="/express.png" alt="java immage">
+                        <p style="text-align: center;">Express.js</p>
+                    </div>
+                    <div class="lazy-load">
+                        <img class="skill_item" src="/flask.png" alt="java immage">
+                        <p style="text-align: center;">Flask</p>
+                    </div>
+                    <div class="lazy-load">
+                        <img class="skill_item" src="/tensorflow.png" alt="java immage">
+                        <p style="text-align: center;">TensorFlow</p>
+                    </div>
+
+                </div>
+                <p class="headings">Others</p>
+                <hr />
+                <div id="others">
+                    <div class="lazy-load">
+                        <img class="skill_item gititem" src="/gitandhub.webp"
+                            style="position: relative; right: 20px;" alt="java immage">
+                        <p style="position: relative; left: 70px;">Git + Github</p>
+                    </div>
+                    <div class="lazy-load">
+                        <img class="skill_item" src="/netlify-logo-svg-vector.svg" alt="java immage">
+                        <p style="text-align: center;">Netlify</p>
+                    </div>
+                    <div class="lazy-load">
+                        <img class="skill_item" src="/images (1).png" alt="java immage">
+                        <p style="text-align: center;">PostgreSQL</p>
+                    </div>
+                    <div class="lazy-load">
+                        <img class="skill_item" src="/mysql.png" alt="java immage">
+                        <p style="text-align: center;">MYSQL</p>
+                    </div>
+                    <div class="lazy-load">
+                        <img class="skill_item" src="/render.png" alt="java immage">
+                        <p style="text-align: center;">Render</p>
+                    </div>
+                    <div class="lazy-load">
+                        <img class="skill_item" src="/aws.png" alt="java immage">
+                        <p style="text-align: center;">AWS</p>
+                    </div>
+                    <div class="lazy-load">
+                        <img class="skill_item" src="/postman.png" alt="java immage">
+                        <p style="text-align: center;">Postman</p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div id="loading-screen">
+            <div class="loader">
+                <div class="square"></div>
+                <div class="square"></div>
+                <div class="square"></div>
+            </div>
+          </div>
+        <script>
+            document.addEventListener("DOMContentLoaded", function () {
+                let options = {
+                    root: null, // viewport
+                    rootMargin: "0px",
+                    threshold: 0.5, // Trigger when 10% of the element is visible
+                };
+
+                let observer = new IntersectionObserver((entries, observer) => {
+                    entries.forEach(entry => {
+                        if (entry.isIntersecting) {
+                            let block = entry.target;
+                            block.classList.add("loaded"); // Show the block (by adding a loaded class)
+                            // Set background image
+                            observer.unobserve(block); // Stop observing once loaded
+                        }
+                    });
+                }, options);
+
+                // Observe all lazy-load blocks
+                document.querySelectorAll(".lazy-load").forEach(block => {
+                    observer.observe(block);
+                });
+            });
+            window.addEventListener('load', function () {
+                const sound = new Audio("/page_sound.mp3"); // Ensure correct path to sound
+                sound.play();
+                // Hide the loading screen after the page is fully loaded
+                setTimeout(function () {
+                    document.getElementById('loading-screen').style.display = 'none';
+                    document.getElementById('content').style.display = 'block';
+                }, 500); // Adjust the time as needed (in ms)
+            });
+        </script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+        <script src="/java_scr/home.js" charset="UTF-8"></script>
+</body>
+
+</html>

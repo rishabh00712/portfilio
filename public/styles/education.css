@@ -1,0 +1,52 @@
+.location{
+    font-size: 24px;
+    font-weight: 400;
+}
+.loc-date{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+.cgpa{
+    padding-bottom: 10px;
+}
+.course{
+    color: rgba(86, 178, 86, 0.925);
+    font-size: 22px;
+}
+.course_name li{
+    font-family:sans-serif;
+}
+#edu_body{
+    display: flex;
+    flex-direction: row;
+    margin-left: 40px;
+    margin-right: 40px;
+    justify-content: space-around;
+    
+}
+.resume-container{
+   
+    height: auto;
+    
+}
+.School{
+   height: auto;
+}
+
+
+.lazy-load {
+    opacity: 0; /* Initially hidden */
+    transition: opacity 0s ease-in-out, box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.lazy-load.loaded {
+    opacity: 0.7; /* When loaded, set opacity to 0.8 */
+}
+
+.lazy-load:hover {
+    opacity: 1; /* On hover, set opacity to 1 */
+    box-shadow: 20px 20px 15px rgba(0, 0, 0, 0.3);
+    transform: translateY(-5px); /* Moves the box up by 10px */
+}
+

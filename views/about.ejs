@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>My Website About</title>
+  <link rel="stylesheet" href="/styles/style.css">
+  <link rel="stylesheet" href="/styles/about.css">
+  <link rel="stylesheet" href="/styles/pic.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+
+
+  <style>
+    #about {
+    background: linear-gradient(135deg, #50B498, #3a8d7a);
+    color: white;
+    border: none;
+    padding: 12px 18px;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.2);
+  }
+  #about:hover {
+  background: linear-gradient(135deg, #3a8d7a, #2c7b6c);
+  transform: scale(1.1);
+  box-shadow: 2px 6px 15px rgba(0, 0, 0, 0.3);
+  }
+
+  #heading{
+    padding-left: 110px;
+  }
+  html{
+    margin-left: 0px;
+  }
+  #body{
+    padding-left: 50px;
+    padding-right: 10px;
+   
+  }
+  #line{
+    position: relative;
+    right: 33px;
+  }
+  </style>
+
+
+</head>
+
+<body >
+  <div id="line">
+    <%- include('partials/header') %>
+  </div>
+   
+    <a href="/projects" class="fixed-anchor" id="arrow" >➡️</a>
+
+
+  </div>
+  <p id="heading">ABOUT</p>
+  <div class="" id="body">
+
+    <p class="about"> I'm <span class="name">RISHABH GARAI</span>, a Third year student pursuing Bachelors in Computer
+      Science and Engineering with Specialization in Al and ML.
+      Enthusiastic<br /> and Competitive student eager to contribute to team success through hardwork, attention to
+      detail and excellent organisational skills.
+      Clear<br /> understanding of C, C++ and Python. My strength is Web Development. I am keenly interested in the
+      experimental areas as well as coding and<br /> am well versed in
+      C/C++, Java, Machine Learning and web development.
+    </p>
+    <p class="headings ach_heading">SKILLS SUMMARY</p>
+    <hr style="margin: 0px; margin-right: 40px; margin-bottom: 20px;"/>
+    <p> 
+      <span class="skills"> Languages:</span> C++, Python, JavaScript, SQL, Bash, HTML, CSS, EJS<br />
+      <span class="skills"> Databases: </span> MySQL, PostgreSQL<br />
+      <span class="skills">Libraries:</span> React, STL, JQuery, Pytorch<br />
+      <span class="skills">Frameworks:</span> ExpressJS, Bootstrap, NodeJS, Flask, TensorFlow<br />
+      <span class="skills">Platforms: </span>VSCode, Replit, Sublime Text, Codesandbox, Netlify <br />
+      <span class="skills">Tools & Technologies: </span> Netlify, Render, GIT, Postman, AWS <br />
+      <span class="skills"> Soft Skills: </span>  Leadership, Team Collaboration, Proactive Learning, Problem-Solving, Communication <br />
+    
+      <p class="headings ach_heading">ACHIEVEMENTS</p>
+      <hr style="margin: 0px; margin-right: 40px; margin-bottom: 20px;"/>
+
+      <span class="skills"> LeetCode:</span>  Solved <strong>300+</strong>  problems and achieved a <strong> 1600+ </strong>score in contests<br />
+      <span class="skills"> Contest Rank: </span>  Secured <strong>2348th rank</strong>  in LeetCode Weekly Contest 422 (out of 27,000 participants globally). Secured
+     <strong>1928th rank</strong>  in Biweekly Contest 147 (out of 26,988 participants globally).<br />
+      <span class="skills">Coding Competition:</span>  Achieved <strong>2rd position</strong>  in Hackrover, a hackathon organized by the department<br />
+      <span class="skills">Open Source Contributions:</span>Successfully contributed to programs such as <strong>Girlscript Summer</strong>  of Code 2024,
+      Social Summer of Code 2024, and <strong>Hacktoberfest</strong>  2024<br />
+
+
+    <div id="footer"> Looking for an opportunity to work in a challenging position combining my skills in Software
+      Engineering, which provides professional development, interesting<br /> experiences and personal growth.</div>
+    </p>
+  </div>
+  <div id="loading-screen">
+    <div class="loader">
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+    </div>
+</div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="/java_scr/home.js" charset="UTF-8"></script>
+</body>
+<script>
+  window.addEventListener('load', function () {
+    const sound = new Audio("/page_sound.mp3"); // Ensure correct path to sound
+    sound.play();
+        // Hide the loading screen after the page is fully loaded
+        setTimeout(function () {
+            document.getElementById('loading-screen').style.display = 'none';
+            document.getElementById('content').style.display = 'block';
+        }, 500); // Adjust the time as needed (in ms)
+    });
+
+</script>
+
+</html>

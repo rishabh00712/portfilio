@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>My Website</title>
+  <link rel="stylesheet" href="/styles/style.css">
+
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="/styles/contact.css">
+</head>
+<style>
+  #contact {
+    background: linear-gradient(135deg, #50B498, #3a8d7a);
+    color: white;
+    border: none;
+    padding: 12px 18px;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition:cubic-bezier(0.445, 0.05, 0.55, 0.95) ;
+    box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.2);
+  }
+
+  #contact:hover {
+    background: linear-gradient(135deg, #3a8d7a, #2c7b6c);
+    transform: scale(1.1);
+    box-shadow: 2px 6px 15px rgba(0, 0, 0, 0.3);
+  }
+  .profile-box {
+    transition: 0.5s;
+  }
+  a.fixed-anchor-left {
+    position: fixed;
+    top: 50%;
+    left: 50px;
+    transform: translate(-50%, -50%);
+    /* For visibility */
+
+    text-decoration: none;
+    color: black;
+    font-size: 30px;
+    border: 2px solid gray;
+    opacity: 0.4;
+  }
+</style>
+
+<body>
+  <%- include('partials/header') %>
+    <a href="./skill" class="fixed-anchor-left" id="arrow">⬅️</a>
+    <div>
+
+
+      <p id="heading">CONTACT</p>
+
+      <div id="contact-container">
+        <div id="contact-list"></div>
+
+        <div class="profile-box lazy-load">
+          <div class="profile-img-container">
+            <img id="rg_img" src="/rishabh.jpg" alt="profile-image">
+          </div>
+          <div class="profile-details">
+            <h1>
+
+              <p class="rishabh_name"> Rishabh Garai </p><br />
+              <div class="num_email num">
+                <a href="https://wa.me/917908904220" style="color: white;"> <span class="num_email num">+91 7908904220</span></a> <br>
+            </div>
+            <div class="num_email">
+              <a href="mailto:rishabhgarai33@gmail.com" style="color: white;"> <span >rishabhgarai33@gmail.com</span></a>
+              </div>
+            </h1>
+          </div>
+        </div>
+        <h2 class="greading">Hey, thank you for visiting my portfolio! Please send me your opinion 😊</h2>
+        <form name="contact-form"action="/send_mail" method="post" class="lazy-load"id="from" netlify>
+          <p>
+            <label><input type="text" name="name" placeholder="Name" class="form-input" required /></label>
+          </p>
+          <p>
+            <label> <input type="email" name="email" placeholder="Email" class="form-input" required /></label>
+          </p>
+          <p>
+            <label>
+              <textarea placeholder="Enter What You Want to Say"name="text" id="myTextarea" class="form-input" required></textarea>
+            </label>
+          </p>
+          <p>
+            <button onclick="event.emailsend()" id="submit-btn" type="submit" class="form-input">Send</button>
+          </p>
+        </form>
+
+      </div>
+    </div>
+    <div id="loading-screen">
+      <div class="loader">
+          <div class="square"></div>
+          <div class="square"></div>
+          <div class="square"></div>
+      </div>
+  </div>
+  <div id="sending-mail"class="hide">
+    <img src="/sending-mi-unscreen.gif" alt="sending-mail img">
+  </div>
+    <script>
+      // Select all input fields in the form
+      const inputs = document.querySelectorAll('.form-input');
+
+      // Add an event listener to each input
+      inputs.forEach((input, index) => {
+        input.addEventListener('keypress', function (event) {
+          if (event.key === 'Enter') {
+            event.preventDefault(); // Prevent form submission
+            const nextInput = inputs[index + 1]; // Get the next input
+            if (nextInput) {
+              nextInput.focus(); // Focus on the next input
+            }
+          }
+        });
+      });
+
+      const textarea = document.getElementById('myTextarea');
+
+      textarea.addEventListener('keydown', function (event) {
+        if (event.key === 'Enter' && event.shiftKey) {
+          // Allow Shift + Enter to create a new line
+          event.preventDefault();
+          textarea.value += '\n';  // Add a new line
+        }
+      });
+      const submitBut = document.getElementById('submit-btn');
+      submitBut.addEventListener('keydown', function (event) {
+        if (event.key === 'Enter') {
+          submitBut.click();
+        }
+      })
+
+      document.addEventListener("DOMContentLoaded", function () {
+        let options = {
+          root: null, // viewport
+          rootMargin: "0px",
+          threshold: .5, // Trigger when 10% of the element is visible
+        };
+
+        let observer = new IntersectionObserver((entries, observer) => {
+          entries.forEach(entry => {
+            if (entry.isIntersecting) {
+              let block = entry.target;
+              block.classList.add("loaded"); // Show the block (by adding a loaded class)
+              // Set background image
+              observer.unobserve(block); // Stop observing once loaded
+            }
+          });
+        }, options);
+
+        // Observe all lazy-load blocks
+        document.querySelectorAll(".lazy-load").forEach(block => {
+          observer.observe(block);
+        });
+      });
+
+      window.addEventListener('load', function () {
+        const sound = new Audio("/page_sound.mp3"); // Ensure correct path to sound
+        sound.play();
+        // Hide the loading screen after the page is fully loaded
+        setTimeout(function () {
+          document.getElementById('loading-screen').style.display = 'none';
+          document.getElementById('content').style.display = 'block';
+        }, 500); // Adjust the time as needed (in ms)
+      });
+
+      document.getElementById("from").addEventListener("submit", function () {
+        
+        document.getElementById("sending-mail").classList.remove("hide");
+        document.getElementById("sending-mail").classList.add("show");
+      setTimeout(function () {
+        document.getElementById("sending-mail").classList.remove("show");
+        document.getElementById("sending-mail").classList.add("hide");
+  }, 2500); // 2 seconds delay
+
+      setTimeout(function(){
+        const sound = new Audio("/emailsend.wav");
+        sound.play();
+      },2200)
+       
+});
+
+
+    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <script src="/java_scr/home.js" charset="UTF-8"></script>
+</body>
+
+</html>
