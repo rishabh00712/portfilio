@@ -3,6 +3,7 @@ import express from "express";
 import bodyParser from "body-parser";
 import path from "path";
 import { fileURLToPath } from "url";  // Needed for ES modules
+import axios from "axios";
 
 import nodemailer from "nodemailer";
 
@@ -101,7 +102,24 @@ app.post("/send_mail",(req,res)=>{
 
     
 })
-// Start the server
-app.listen(PORT, () => {
-    console.log(`Server is running at http://localhost:${PORT}`);
-});
+
+const PING_URL = "https://rishabh-garai-portfolio.onrender.com"; // Replace with your actual website URL
+
+// Function to keep the server alive
+const keepAlive = async () => {
+    try {
+      await axios.get(PING_URL);
+      console.log("Pinged successfully!");
+    } catch (error) {
+      console.error("Ping failed:", error.message);
+    }
+  };
+  const port=5055;
+  // Ping the server every 10 minutes
+  setInterval(keepAlive, 1000*60*5);
+  
+  app.listen(port, () => {
+    console.log(`Backend server is running on http://localhost:${port}`);
+    keepAlive();
+  });
+
